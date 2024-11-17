@@ -59,4 +59,4 @@ extra:
   generator: false
 nav:
   - 'index.md'
-  - 'test.md'
+  - 'memo.md'
