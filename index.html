@@ -47,7 +47,16 @@
     
     
     
-  </head>
+   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -263,6 +272,8 @@
       
         
       
+        
+      
     
     
     
@@ -307,18 +318,99 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="2025/01/" class="md-nav__link">
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
         
   
   
+  
+    <a href="2025/01/" class="md-nav__link">
+      
+  
+  
   <span class="md-ellipsis">
-    GitHub Actions for MkDocs
+    01
     
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="2025/02/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    02
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -483,6 +575,35 @@
                     
                     <div class="blog-post">
     <h3 class="blog-post-title">
+        <a class="link" href="https://s03d4-164.github.io/mkdghp/2025/02/">Dify Knowledge Base</a>
+    </h3>
+    
+    <p class="blog-post-description">
+        
+    </p>
+    <div class="blog-post-extra">
+        Published at: 2025/04/27 14:15
+    </div>
+    <hr />
+</div>
+
+                    
+                
+                    
+                    
+                    
+                    
+
+                    
+                    
+
+                    
+                    
+                        
+                    
+                    
+                    <div class="blog-post">
+    <h3 class="blog-post-title">
         <a class="link" href="https://s03d4-164.github.io/mkdghp/2025/01/">GitHub Actions for MkDocs</a>
     </h3>
     
@@ -511,7 +632,7 @@
             
         </div>
         
-            <div>Total <b>1</b> posts.</div>
+            <div>Total <b>2</b> posts.</div>
         
     </div>
 </div></p>
@@ -588,7 +709,9 @@
       <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html><script>var currentPage = 0
 const lastComponent = window.location.href.split("/").slice(-1).pop()
 
