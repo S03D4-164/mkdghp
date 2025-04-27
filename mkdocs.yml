@@ -1,4 +1,5 @@
 site_name: mkdghp
+site_url: https://s03d4-164.github.io/mkdghp/
 theme:
   name: material
   language: ja
