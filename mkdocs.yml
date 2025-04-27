@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: mkdghp
 theme:
   name: material
   language: ja
@@ -10,7 +10,7 @@ theme:
         name: Switch to light mode
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default 
+      scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -21,8 +21,8 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
   features:
-    - navigation.instant
-    - navigation.instant.progress
+    #- navigation.instant
+    #- navigation.instant.progress
     - navigation.indexes
     - navigation.top
     - navigation.prune
@@ -55,8 +55,13 @@ plugins:
           default: true
           name: Japanese
           build: true
+  - blogging:
+      dirs:
+        - .
+      locale: ja_JP
 extra:
   generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/S03D4-164/
 nav:
-  - 'index.md'
-  - 'memo.md'
