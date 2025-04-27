@@ -60,6 +60,7 @@ plugins:
       dirs:
         - .
       locale: ja_JP
+  - glightbox:
 extra:
   generator: false
   social:

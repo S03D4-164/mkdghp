@@ -13,5 +13,5 @@ jobs:
         with:
           python-version: 3.x
           #cache: 'pip'
-      - run: pip install mkdocs-material mkdocs-macros-plugin mkdocs-static-i18n mkdocs-blogging-plugin
+      - run: pip install mkdocs-material mkdocs-macros-plugin mkdocs-static-i18n mkdocs-blogging-plugin mkdocs-glightbox
       - run: mkdocs gh-deploy --force
